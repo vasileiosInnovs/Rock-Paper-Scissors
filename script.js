@@ -6,6 +6,7 @@ console.log("Hello World!")
 function getComputerChoice (){
    const options = Math.floor(Math.random() * 3);
 
+// use switch condition to randomly select an option aligning itself to the random number generated
    switch (options){
     case 0:
         return "rock";
@@ -29,6 +30,33 @@ console.log(getComputerChoice())
 // write a code that getHumanChoice returns one of the valid choices
 // use prompt to get user input
 // test using console.log()
+// create a function named getHumanChoice
+// create a constant variable options to store the three items
+// create a variable for the prompt
+// prompt for the user's input
+// if condition to choose one of the options of the three
+// elif rock, paper, scissors
+// else invalid choice
+// console.log getHumanChoice
+function getHumanChoice (){
+    const choice = prompt("Rock, paper or scissors").toLowerCase();
+    switch(choice) {
+        case "rock":
+          return "rock";
+          break;
+        case "paper":
+          return "paper";
+          break;
+        case "scissors":
+          return "scissors";
+          break;
+        default:
+          return "Invalid choice!";
+    }
+    return
+}
+console.log(getHumanChoice())
+
 
 // create variable humanScore
 humanScore = 0;
