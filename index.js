@@ -16,3 +16,21 @@ function getComputerChoice () {
     }
 }
 
+//humanChoice
+function getHumanChoice () {
+    const promptHumanChoice = prompt("Rock, paper or scissors?").toLowerCase();
+
+    switch(promptHumanChoice) {
+        case 'rock':
+            console.log ('rock')
+            break;
+        case 'paper':
+            console.log('paper')
+            break;
+        case 'scissors':
+            console.log('scissors')
+            break;
+        default:
+            console.log('Invalid choice.')
+    }
+}
