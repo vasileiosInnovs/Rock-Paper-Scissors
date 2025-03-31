@@ -34,3 +34,7 @@ function getHumanChoice () {
             console.log('Invalid choice.')
     }
 }
+
+//players score variables
+const humanScore = 0;
+const computerScore = 0;
